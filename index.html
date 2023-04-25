@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      width: 100%;
+      height: 100%;
+    }
+    .clear {
+      clear: both;
+    }
+  </style>
+  <link rel="stylesheet"  href="./index.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="main">
+      <!-- <div class="bg" ></div> -->
+      <!-- <canvas id="myCanvas"></canvas> -->
+      <img src="./assets/bg.png" alt="" class="bg" usemap="#plantmap">
+      <map name="plantmap">
+        <!-- area 定义图像映射中的区域 -->
+        <area shape="rect" coords="0,0,82,126" alt="Sun" href="http://www.baidu.com" target="_blank"/>
+        <area shape="circle" coords="90,58,3" alt="Mercury" href="http://www.163.com" target="_parent"/>
+        <area shape="circle" coords="124,58,3" alt="Venus" href="http://www.qq.com" target="_top"/>
+      </map>
+    </div>
+  <div class="footer">
+    <ul>
+      <li>首页</li>
+      <li>|</li>
+      <li>我的</li>
+    </ul>
+  </div>
+</div>
+</body>
+<!-- <script src="./index.js" type="module"></script> -->
+<!-- <script src="./scene.js" type="module"></script> -->
+<script src="./drag.js" type="module"></script>
+</html>

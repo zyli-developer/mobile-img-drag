@@ -1,0 +1,65 @@
+
+.container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex: 1;
+  background: #000;
+  padding: 0;
+  /* overflow: hidden; */
+  /* height: calc( 100% - 40px); */
+  overflow: hidden;
+  /* margin-bottom: -40px; */
+  width: 100%;
+  /* height: 100%; */
+  overflow: auto;
+  /* padding: 16px; */
+}
+
+
+#myCanvas {
+  display: block;
+  margin: 0px auto;
+  background: #D6F8FF;
+  /* border: solid 1px #000; */
+}
+
+/* .bg{
+  background-image: url('./assets//bg.png');
+  background-position: 0 0;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+} */
+.footer {
+  height: 40px;
+  /* width: 100%; */
+  /* position: fixed; */
+  /* bottom: 0px; */
+  /* left: 0px; */
+  /* background: #fff; */
+ 
+}
+.footer ul {
+  display: flex;
+  list-style: none;
+  height: 40px;
+  align-items: center;
+}
+.footer ul li {
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+}
+
+/* 隐藏滚动条 */
+.main::-webkit-scrollbar { width: 0 !important ; background-color: transparent;}
+
+
+.main { -ms-overflow-style: none; }
+
+
+.main { overflow: -moz-scrollbars-none; }
